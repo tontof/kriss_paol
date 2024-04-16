@@ -1,0 +1,62 @@
+header {
+  font-size: small;
+  color: grey;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+body > form {
+  text-align: center;
+  margin-top: 24px;
+}
+
+body > form > label, body > form > label > span, body > form > a {
+  display: inline-block;
+}
+
+table, td, th {
+  text-align: center;
+  border: 1px solid black;  
+}
+
+table {
+  width: 100%;
+  max-width: 840px;
+  table-layout: fixed;
+  margin: auto;
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 6px 6px 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -6px -6px 0;
+  padding: 6px;
+  cursor: pointer;
+  text-align: center;
+}
+
+details[open] {
+  padding: 6px;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 840px) {
+  table {
+    width: auto;
+  }
+  tr {
+    display: inline-block;
+  }
+  td, th {
+    display: block;
+  }
+}

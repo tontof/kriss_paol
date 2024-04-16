@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>KrISS paol</title>
+    <link rel="stylesheet" href="inc/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <a href="http://github.com/tontof/kriss_paol">KrISS paol</a>
+      <span class="hidden-phone"> - A simple and smart (or stupid) <a href="https://en.wikipedia.org/wiki/Mnemonic_peg_system#PAO_system">PAO system</a></span>. By <a href="https://tontof.net">Tontof</a>
+    </header>
+    <details><summary>En utilisant le <a href="https://fr.wikipedia.org/wiki/Code_chiffres-sons">système majeur</a>, il est possible de retenir des chiffres plus facilement.<br> Cliquez-ici pour avoir plus d'informations</summary>
+      <p>L'idée générale est de retrouver un nombre à partir d'une phrase en utilisant une table qui associe un chiffre à un son.<br><br>
+
+        Voici la table classique du système majeur :</p>
+      <table>
+        <tr>
+          <th>Chiffres</th>
+          <td>0</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th>Sons</th>
+          <td>s, z</td>
+          <td>t, d</td>
+          <td>n, gn, ng</td>
+          <td>m</td>
+          <td>r</td>
+          <td>l</td>
+          <td>j, ch, sh</td>
+          <td>k, c, g</td>
+          <td>f, v</td>
+          <td>p, b</td>
+        </tr>
+        <tr>
+          <th><a href="https://fr.wikipedia.org/wiki/Alphabet_phon%C3%A9tique_international">IPA</a></th>
+          <td>/s/, /z/</td>
+          <td>/t/, /d/, /θ/, /ð/</td>
+          <td>/n/</td>
+          <td>/m/</td>
+          <td>/r/</td>
+          <td>/l/</td>
+          <td>/tʃ/, /dʒ/, /ʃ/, /ʒ/</td>
+          <td>/k/, /ɡ/</td>
+          <td>/f/, /v/</td>
+          <td>/p/, /b/</td>
+        </tr>
+      </table>
+      <p>Une méthode classique utilisée pour retenir des nombres est d'utiliser une table de rappel qui associe par exemple les 100 premiers nombres à un objet en fonction du son. Un seau peut correspondre au 0, un dé au 1, ..., une poupée à 99.<br><br> Pour aller plus loin, on peut également créer une table de rappel pour des personnes puis une autre pour des actions et on arrive au système PAO (personne action objet) qui permet de retenir facilement une séquence de 6 chiffres (les 2 premiers associés à une personne, les 2 suivants à une action et les 2 derniers à un objet).<br><br> En ajoutant une dernière information de lieu on se retrouve avec un système PAOL moins classique mais qui permet de retenir une suite jusqu'à 8 chiffres.</p>
+      <p>Si les tables de rappel sont assez personnelles, KrISS paol est un outil générique qui a pour but de faciliter la mémorisation d'un nombre en proposant différentes phrases possibles à partir d'un nombre donné.<br><br> Par exemple avec la phrase :<br> « Dorothée loue une péniche à Limoux », vous pouvez apprendre les premières décimales de π : <a href="?person=dorothée&action=loue&object=péniche&location=limoux">141592653</a></p>
+    </details>
+    <form><label><span>Entrer le nombre à convertir :</span> <input id="input" name="number" type="number" onkeypress="return event.charCode>=48 && event.charCode<=57"></label> <a href="">Lien à partager</a></form>
+    <ul id="solutions"></ul>
+    <script src="inc/js/kriss-paol.js"></script>
+    <script src="inc/js/script.js"></script>
+  </body>
+</html>
